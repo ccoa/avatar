@@ -28,7 +28,9 @@ $(document).ready(function() {
                 }
             }).done(function(mensaje) {
                 
+            	$('#divMensaje').hide();
             	$('#divMensaje').html(mensaje);
+            	$('#divMensaje').fadeIn();
             	
             }).fail(function( jqXHR, textStatus, errorThrown ) {
             	console.log(errorThrown);
